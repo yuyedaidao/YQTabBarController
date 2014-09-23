@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		213FCF3619D162AD00EEEB01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF3519D162AD00EEEB01 /* AppDelegate.swift */; };
+		213FCF3819D162AD00EEEB01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF3719D162AD00EEEB01 /* ViewController.swift */; };
+		213FCF3B19D162AD00EEEB01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213FCF3919D162AD00EEEB01 /* Main.storyboard */; };
+		213FCF3D19D162AD00EEEB01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213FCF3C19D162AD00EEEB01 /* Images.xcassets */; };
+		213FCF4019D162AD00EEEB01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213FCF3E19D162AD00EEEB01 /* LaunchScreen.xib */; };
+		213FCF4C19D162AD00EEEB01 /* YQTabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF4B19D162AD00EEEB01 /* YQTabBarControllerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		213FCF4619D162AD00EEEB01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 213FCF2819D162AD00EEEB01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213FCF2F19D162AD00EEEB01;
+			remoteInfo = YQTabBarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		213FCF3019D162AD00EEEB01 /* YQTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		213FCF3419D162AD00EEEB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213FCF3519D162AD00EEEB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		213FCF3719D162AD00EEEB01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		213FCF3A19D162AD00EEEB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		213FCF3C19D162AD00EEEB01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		213FCF3F19D162AD00EEEB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		213FCF4519D162AD00EEEB01 /* YQTabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQTabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		213FCF4A19D162AD00EEEB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213FCF4B19D162AD00EEEB01 /* YQTabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTabBarControllerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		213FCF2D19D162AD00EEEB01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213FCF4219D162AD00EEEB01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		213FCF2719D162AD00EEEB01 = {
+			isa = PBXGroup;
+			children = (
+				213FCF3219D162AD00EEEB01 /* YQTabBarController */,
+				213FCF4819D162AD00EEEB01 /* YQTabBarControllerTests */,
+				213FCF3119D162AD00EEEB01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		213FCF3119D162AD00EEEB01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				213FCF3019D162AD00EEEB01 /* YQTabBarController.app */,
+				213FCF4519D162AD00EEEB01 /* YQTabBarControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		213FCF3219D162AD00EEEB01 /* YQTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				213FCF3519D162AD00EEEB01 /* AppDelegate.swift */,
+				213FCF3719D162AD00EEEB01 /* ViewController.swift */,
+				213FCF3919D162AD00EEEB01 /* Main.storyboard */,
+				213FCF3C19D162AD00EEEB01 /* Images.xcassets */,
+				213FCF3E19D162AD00EEEB01 /* LaunchScreen.xib */,
+				213FCF3319D162AD00EEEB01 /* Supporting Files */,
+			);
+			path = YQTabBarController;
+			sourceTree = "<group>";
+		};
+		213FCF3319D162AD00EEEB01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				213FCF3419D162AD00EEEB01 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		213FCF4819D162AD00EEEB01 /* YQTabBarControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				213FCF4B19D162AD00EEEB01 /* YQTabBarControllerTests.swift */,
+				213FCF4919D162AD00EEEB01 /* Supporting Files */,
+			);
+			path = YQTabBarControllerTests;
+			sourceTree = "<group>";
+		};
+		213FCF4919D162AD00EEEB01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				213FCF4A19D162AD00EEEB01 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		213FCF2F19D162AD00EEEB01 /* YQTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213FCF4F19D162AD00EEEB01 /* Build configuration list for PBXNativeTarget "YQTabBarController" */;
+			buildPhases = (
+				213FCF2C19D162AD00EEEB01 /* Sources */,
+				213FCF2D19D162AD00EEEB01 /* Frameworks */,
+				213FCF2E19D162AD00EEEB01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQTabBarController;
+			productName = YQTabBarController;
+			productReference = 213FCF3019D162AD00EEEB01 /* YQTabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		213FCF4419D162AD00EEEB01 /* YQTabBarControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213FCF5219D162AD00EEEB01 /* Build configuration list for PBXNativeTarget "YQTabBarControllerTests" */;
+			buildPhases = (
+				213FCF4119D162AD00EEEB01 /* Sources */,
+				213FCF4219D162AD00EEEB01 /* Frameworks */,
+				213FCF4319D162AD00EEEB01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				213FCF4719D162AD00EEEB01 /* PBXTargetDependency */,
+			);
+			name = YQTabBarControllerTests;
+			productName = YQTabBarControllerTests;
+			productReference = 213FCF4519D162AD00EEEB01 /* YQTabBarControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		213FCF2819D162AD00EEEB01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Wang;
+				TargetAttributes = {
+					213FCF2F19D162AD00EEEB01 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					213FCF4419D162AD00EEEB01 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 213FCF2F19D162AD00EEEB01;
+					};
+				};
+			};
+			buildConfigurationList = 213FCF2B19D162AD00EEEB01 /* Build configuration list for PBXProject "YQTabBarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 213FCF2719D162AD00EEEB01;
+			productRefGroup = 213FCF3119D162AD00EEEB01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				213FCF2F19D162AD00EEEB01 /* YQTabBarController */,
+				213FCF4419D162AD00EEEB01 /* YQTabBarControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		213FCF2E19D162AD00EEEB01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213FCF3B19D162AD00EEEB01 /* Main.storyboard in Resources */,
+				213FCF4019D162AD00EEEB01 /* LaunchScreen.xib in Resources */,
+				213FCF3D19D162AD00EEEB01 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213FCF4319D162AD00EEEB01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		213FCF2C19D162AD00EEEB01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213FCF3819D162AD00EEEB01 /* ViewController.swift in Sources */,
+				213FCF3619D162AD00EEEB01 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213FCF4119D162AD00EEEB01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213FCF4C19D162AD00EEEB01 /* YQTabBarControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		213FCF4719D162AD00EEEB01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 213FCF2F19D162AD00EEEB01 /* YQTabBarController */;
+			targetProxy = 213FCF4619D162AD00EEEB01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		213FCF3919D162AD00EEEB01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				213FCF3A19D162AD00EEEB01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		213FCF3E19D162AD00EEEB01 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				213FCF3F19D162AD00EEEB01 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		213FCF4D19D162AD00EEEB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		213FCF4E19D162AD00EEEB01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		213FCF5019D162AD00EEEB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YQTabBarController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		213FCF5119D162AD00EEEB01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YQTabBarController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		213FCF5319D162AD00EEEB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YQTabBarControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQTabBarController.app/YQTabBarController";
+			};
+			name = Debug;
+		};
+		213FCF5419D162AD00EEEB01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YQTabBarControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQTabBarController.app/YQTabBarController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		213FCF2B19D162AD00EEEB01 /* Build configuration list for PBXProject "YQTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213FCF4D19D162AD00EEEB01 /* Debug */,
+				213FCF4E19D162AD00EEEB01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		213FCF4F19D162AD00EEEB01 /* Build configuration list for PBXNativeTarget "YQTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213FCF5019D162AD00EEEB01 /* Debug */,
+				213FCF5119D162AD00EEEB01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		213FCF5219D162AD00EEEB01 /* Build configuration list for PBXNativeTarget "YQTabBarControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213FCF5319D162AD00EEEB01 /* Debug */,
+				213FCF5419D162AD00EEEB01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 213FCF2819D162AD00EEEB01 /* Project object */;
+}
