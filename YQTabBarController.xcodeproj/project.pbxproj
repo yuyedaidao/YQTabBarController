@@ -13,6 +13,29 @@
 		213FCF3D19D162AD00EEEB01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213FCF3C19D162AD00EEEB01 /* Images.xcassets */; };
 		213FCF4019D162AD00EEEB01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213FCF3E19D162AD00EEEB01 /* LaunchScreen.xib */; };
 		213FCF4C19D162AD00EEEB01 /* YQTabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF4B19D162AD00EEEB01 /* YQTabBarControllerTests.swift */; };
+		213FCF5719D1630200EEEB01 /* YQTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF5619D1630200EEEB01 /* YQTabBarController.swift */; };
+		213FCF5919D1649A00EEEB01 /* YQTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF5819D1649A00EEEB01 /* YQTabBar.swift */; };
+		213FCF5B19D164CE00EEEB01 /* YQTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF5A19D164CD00EEEB01 /* YQTabBarItem.swift */; };
+		213FCF5E19D16D9400EEEB01 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF5C19D16D9400EEEB01 /* FirstViewController.swift */; };
+		213FCF5F19D16D9400EEEB01 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213FCF5D19D16D9400EEEB01 /* FirstViewController.xib */; };
+		21C33AED19D270DA0044270E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C33AEB19D270DA0044270E /* SecondViewController.swift */; };
+		21C33AEE19D270DA0044270E /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AEC19D270DA0044270E /* SecondViewController.xib */; };
+		21C33AF319D271C20044270E /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C33AF119D271C20044270E /* FourthViewController.swift */; };
+		21C33AF419D271C20044270E /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AF219D271C20044270E /* FourthViewController.xib */; };
+		21C33AF719D271EC0044270E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C33AF519D271EC0044270E /* ThirdViewController.swift */; };
+		21C33AF819D271EC0044270E /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AF619D271EC0044270E /* ThirdViewController.xib */; };
+		21C33B0519D2A15E0044270E /* 1_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AF919D2A15E0044270E /* 1_a.png */; };
+		21C33B0619D2A15E0044270E /* 1_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AFA19D2A15E0044270E /* 1_a@2x.png */; };
+		21C33B0719D2A15E0044270E /* 1_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AFB19D2A15E0044270E /* 1_b.png */; };
+		21C33B0819D2A15E0044270E /* 1_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AFC19D2A15E0044270E /* 1_b@2x.png */; };
+		21C33B0919D2A15E0044270E /* 2_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AFD19D2A15E0044270E /* 2_a.png */; };
+		21C33B0A19D2A15E0044270E /* 2_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AFE19D2A15E0044270E /* 2_a@2x.png */; };
+		21C33B0B19D2A15E0044270E /* 2_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AFF19D2A15E0044270E /* 2_b.png */; };
+		21C33B0C19D2A15E0044270E /* 2_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33B0019D2A15E0044270E /* 2_b@2x.png */; };
+		21C33B0D19D2A15E0044270E /* 3_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33B0119D2A15E0044270E /* 3_a.png */; };
+		21C33B0E19D2A15E0044270E /* 3_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33B0219D2A15E0044270E /* 3_a@2x.png */; };
+		21C33B0F19D2A15E0044270E /* 3_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33B0319D2A15E0044270E /* 3_b.png */; };
+		21C33B1019D2A15E0044270E /* 3_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21C33B0419D2A15E0044270E /* 3_b@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +59,30 @@
 		213FCF4519D162AD00EEEB01 /* YQTabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQTabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		213FCF4A19D162AD00EEEB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		213FCF4B19D162AD00EEEB01 /* YQTabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTabBarControllerTests.swift; sourceTree = "<group>"; };
+		213FCF5619D1630200EEEB01 /* YQTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQTabBarController.swift; sourceTree = "<group>"; };
+		213FCF5819D1649A00EEEB01 /* YQTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQTabBar.swift; sourceTree = "<group>"; };
+		213FCF5A19D164CD00EEEB01 /* YQTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQTabBarItem.swift; sourceTree = "<group>"; };
+		213FCF5C19D16D9400EEEB01 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		213FCF5D19D16D9400EEEB01 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		21796C2A19D2C1BB00D1FBA4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		21C33AEB19D270DA0044270E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		21C33AEC19D270DA0044270E /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		21C33AF119D271C20044270E /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		21C33AF219D271C20044270E /* FourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
+		21C33AF519D271EC0044270E /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		21C33AF619D271EC0044270E /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		21C33AF919D2A15E0044270E /* 1_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_a.png; sourceTree = "<group>"; };
+		21C33AFA19D2A15E0044270E /* 1_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_a@2x.png"; sourceTree = "<group>"; };
+		21C33AFB19D2A15E0044270E /* 1_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_b.png; sourceTree = "<group>"; };
+		21C33AFC19D2A15E0044270E /* 1_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_b@2x.png"; sourceTree = "<group>"; };
+		21C33AFD19D2A15E0044270E /* 2_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_a.png; sourceTree = "<group>"; };
+		21C33AFE19D2A15E0044270E /* 2_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2_a@2x.png"; sourceTree = "<group>"; };
+		21C33AFF19D2A15E0044270E /* 2_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_b.png; sourceTree = "<group>"; };
+		21C33B0019D2A15E0044270E /* 2_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2_b@2x.png"; sourceTree = "<group>"; };
+		21C33B0119D2A15E0044270E /* 3_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_a.png; sourceTree = "<group>"; };
+		21C33B0219D2A15E0044270E /* 3_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3_a@2x.png"; sourceTree = "<group>"; };
+		21C33B0319D2A15E0044270E /* 3_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_b.png; sourceTree = "<group>"; };
+		21C33B0419D2A15E0044270E /* 3_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3_b@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +106,7 @@
 		213FCF2719D162AD00EEEB01 = {
 			isa = PBXGroup;
 			children = (
+				213FCF5519D162DC00EEEB01 /* Classes */,
 				213FCF3219D162AD00EEEB01 /* YQTabBarController */,
 				213FCF4819D162AD00EEEB01 /* YQTabBarControllerTests */,
 				213FCF3119D162AD00EEEB01 /* Products */,
@@ -83,6 +131,15 @@
 				213FCF3C19D162AD00EEEB01 /* Images.xcassets */,
 				213FCF3E19D162AD00EEEB01 /* LaunchScreen.xib */,
 				213FCF3319D162AD00EEEB01 /* Supporting Files */,
+				213FCF5C19D16D9400EEEB01 /* FirstViewController.swift */,
+				213FCF5D19D16D9400EEEB01 /* FirstViewController.xib */,
+				21C33AEB19D270DA0044270E /* SecondViewController.swift */,
+				21C33AEC19D270DA0044270E /* SecondViewController.xib */,
+				21C33AF519D271EC0044270E /* ThirdViewController.swift */,
+				21C33AF619D271EC0044270E /* ThirdViewController.xib */,
+				21C33AF119D271C20044270E /* FourthViewController.swift */,
+				21C33AF219D271C20044270E /* FourthViewController.xib */,
+				21796C2A19D2C1BB00D1FBA4 /* MyPlayground.playground */,
 			);
 			path = YQTabBarController;
 			sourceTree = "<group>";
@@ -90,6 +147,18 @@
 		213FCF3319D162AD00EEEB01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				21C33AF919D2A15E0044270E /* 1_a.png */,
+				21C33AFA19D2A15E0044270E /* 1_a@2x.png */,
+				21C33AFB19D2A15E0044270E /* 1_b.png */,
+				21C33AFC19D2A15E0044270E /* 1_b@2x.png */,
+				21C33AFD19D2A15E0044270E /* 2_a.png */,
+				21C33AFE19D2A15E0044270E /* 2_a@2x.png */,
+				21C33AFF19D2A15E0044270E /* 2_b.png */,
+				21C33B0019D2A15E0044270E /* 2_b@2x.png */,
+				21C33B0119D2A15E0044270E /* 3_a.png */,
+				21C33B0219D2A15E0044270E /* 3_a@2x.png */,
+				21C33B0319D2A15E0044270E /* 3_b.png */,
+				21C33B0419D2A15E0044270E /* 3_b@2x.png */,
 				213FCF3419D162AD00EEEB01 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +179,16 @@
 				213FCF4A19D162AD00EEEB01 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		213FCF5519D162DC00EEEB01 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				213FCF5619D1630200EEEB01 /* YQTabBarController.swift */,
+				213FCF5819D1649A00EEEB01 /* YQTabBar.swift */,
+				213FCF5A19D164CD00EEEB01 /* YQTabBarItem.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +271,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C33B0B19D2A15E0044270E /* 2_b.png in Resources */,
+				21C33B0C19D2A15E0044270E /* 2_b@2x.png in Resources */,
+				21C33AF819D271EC0044270E /* ThirdViewController.xib in Resources */,
+				21C33B0819D2A15E0044270E /* 1_b@2x.png in Resources */,
+				21C33B0719D2A15E0044270E /* 1_b.png in Resources */,
 				213FCF3B19D162AD00EEEB01 /* Main.storyboard in Resources */,
+				21C33B1019D2A15E0044270E /* 3_b@2x.png in Resources */,
+				21C33B0E19D2A15E0044270E /* 3_a@2x.png in Resources */,
+				21C33B0D19D2A15E0044270E /* 3_a.png in Resources */,
 				213FCF4019D162AD00EEEB01 /* LaunchScreen.xib in Resources */,
+				21C33B0519D2A15E0044270E /* 1_a.png in Resources */,
+				21C33B0F19D2A15E0044270E /* 3_b.png in Resources */,
 				213FCF3D19D162AD00EEEB01 /* Images.xcassets in Resources */,
+				213FCF5F19D16D9400EEEB01 /* FirstViewController.xib in Resources */,
+				21C33B0919D2A15E0044270E /* 2_a.png in Resources */,
+				21C33B0A19D2A15E0044270E /* 2_a@2x.png in Resources */,
+				21C33AF419D271C20044270E /* FourthViewController.xib in Resources */,
+				21C33B0619D2A15E0044270E /* 1_a@2x.png in Resources */,
+				21C33AEE19D270DA0044270E /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213FCF5B19D164CE00EEEB01 /* YQTabBarItem.swift in Sources */,
+				21C33AF719D271EC0044270E /* ThirdViewController.swift in Sources */,
+				213FCF5719D1630200EEEB01 /* YQTabBarController.swift in Sources */,
 				213FCF3819D162AD00EEEB01 /* ViewController.swift in Sources */,
+				21C33AF319D271C20044270E /* FourthViewController.swift in Sources */,
+				213FCF5E19D16D9400EEEB01 /* FirstViewController.swift in Sources */,
+				21C33AED19D270DA0044270E /* SecondViewController.swift in Sources */,
 				213FCF3619D162AD00EEEB01 /* AppDelegate.swift in Sources */,
+				213FCF5919D1649A00EEEB01 /* YQTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +507,7 @@
 				213FCF5119D162AD00EEEB01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		213FCF5219D162AD00EEEB01 /* Build configuration list for PBXNativeTarget "YQTabBarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +516,7 @@
 				213FCF5419D162AD00EEEB01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
