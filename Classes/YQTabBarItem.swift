@@ -10,9 +10,15 @@ import UIKit
 
 class YQTabBarItem: UIControl {
     
+//    weak var tabBar:YQTabBar?
+    
+    private var _index:Int! = 0
+    var index:Int{
+        return _index
+    }
     
     var title:String?
-    var titlePositionAdjustment:UIOffset!
+    var titlePositionAdjustment:UIOffset! = YQTitlePositionAdjustment
     var unselectedTitleAttributes:Dictionary<NSString,AnyObject>!
     var selectedTitleAttributes:Dictionary<NSString,AnyObject>!
     
@@ -23,18 +29,19 @@ class YQTabBarItem: UIControl {
     var selectedBackgroundColor:UIColor?
     var unselectedImage:UIImage!
     var selectedImage:UIImage!
-    var imagePositionAdjustment:UIOffset! = UIOffsetZero
+    var imagePositionAdjustment:UIOffset! = YQImagePositionAdjustment
     
     var badgeValue:Int?
     
-    lazy var badgeBackgroundColor:UIColor! = UIColor.redColor()
-    lazy var badgeTextColor:UIColor! = UIColor.whiteColor()
-    lazy var badgeTextFont:UIFont! = UIFont.systemFontOfSize(12)
-    lazy var badgePositionAdjustment:UIOffset! = UIOffsetZero
+    lazy var badgeBackgroundColor:UIColor! = YQBadgeBackgroundColor
+    lazy var badgeTextColor:UIColor! = YQBadgeTextColor
+    lazy var badgeTextFont:UIFont! = YQBadgeTextFont
+    lazy var badgePositionAdjustment:UIOffset! = YQBadgePositionAdjustment
 
-    init(frame:CGRect,title:String?,selectedImage:UIImage!,unselectedImage:UIImage!){
+    init(frame:CGRect,title:String?,selectedImage:UIImage!,unselectedImage:UIImage!,index:Int!,tabBar:YQTabBar){
         super.init(frame:frame)
         self.title = title
+        self._index = index
         self.unselectedImage = unselectedImage;
         self.selectedImage = selectedImage;
         self.commonInitialization()
@@ -54,7 +61,6 @@ class YQTabBarItem: UIControl {
         self.backgroundColor = UIColor.clearColor()
         unselectedTitleAttributes = [NSFontAttributeName:UIFont.systemFontOfSize(12),NSForegroundColorAttributeName:UIColor.blackColor()]
         selectedTitleAttributes = unselectedTitleAttributes
-        self.titlePositionAdjustment = UIOffsetZero
         
     }
     
