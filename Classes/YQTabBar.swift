@@ -31,6 +31,12 @@ class YQTabBar: UIView {
     func addTabBarItem(tabBarItem:YQTabBarItem){
         self.tabBarItems.append(tabBarItem)
         self.addSubview(tabBarItem)
+        tabBarItem.addTarget(self, action: Selector("tabBarItemSelected"), forControlEvents: UIControlEvents.TouchDown)
+    }
+    
+    func tabBarItemSelected(tabBarItem:YQTabBarItem){
+        tabBarItem.selected = !tabBarItem.selected
+        
     }
     /*
     // Only override drawRect: if you perform custom drawing.

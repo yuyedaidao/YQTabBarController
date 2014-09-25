@@ -39,6 +39,7 @@ class YQTabBarController: UIViewController {
             fatalError("图片数不足")
         }
         
+//        NSLog("self.titles = %@", self.titles!)
         var width:CGFloat = self.view.bounds.size.width / CGFloat(self.viewControllers.count)
      
         for (index,vc) in enumerate(self.viewControllers){
@@ -47,6 +48,7 @@ class YQTabBarController: UIViewController {
             var unselectedImage:UIImage = UIImage(named: "\(self.imageNames[index])_a")
             
             var tabBarItem:YQTabBarItem = YQTabBarItem(frame: rect, title: self.titles?[index], selectedImage: selectedImage, unselectedImage: unselectedImage)
+            tabBarItem.badgeValue = 8+index
             self.tabBar.addTabBarItem(tabBarItem)
         }
         
