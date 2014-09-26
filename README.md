@@ -17,26 +17,7 @@ YQTabBarController
         
 ######图片必须有，标题可选
 
-####配置文件 YQTabBarConfigure 自行对号入座
 
-    //tabbar背景颜色
-    let YQTabBarBackgroundColor = UIColor.grayColor()
-    let YQTabBarHeight:CGFloat = 50
-    let YQTitlePositionAdjustment:UIOffset = UIOffsetZero
-    //badge(小数字)圆圈北京颜色
-    let YQBadgeBackgroundColor = UIColor.redColor()
-    let YQImagePositionAdjustment:UIOffset = UIOffsetZero
-    //badge(小数字)颜色
-    let YQBadgeTextColor:UIColor = UIColor.whiteColor()
-    let YQBadgeTextFont:UIFont! = UIFont.systemFontOfSize(12)
-    let YQBadgePositionAdjustment:UIOffset! = UIOffsetZero
-
-    let YQUnselectedBackgroundImage:UIImage? = nil
-    let YQSelectedBackgroundImage:UIImage? = nil
-    let YQUnselectedBackgroundColor:UIColor? = UIColor.groupTableViewBackgroundColor()
-    let YQSelectedBackgroundColor:UIColor? = UIColor.orangeColor()
-
-    let YQTabBarAnimationDuration:NSTimeInterval = 0.2
     
 #### 常用方法
       
@@ -49,5 +30,32 @@ YQTabBarController
        
   **严重注意:**相应的导航视图必须是YQNavigationController(继承了UINavigationController,丝毫不影响原有的效果,品质保证请放心使用)
   
-![gif]()
+![gif](https://github.com/yuyedaidao/YQTabBarController/blob/master/YQTabBarController/tabBar.gif)
+
+####配置文件 YQTabBarConfigure 自行对号入座
+
+    //tabbar背景颜色
+    let YQTabBarBackgroundColor = UIColor.grayColor()
+    //tabBar高度
+    let YQTabBarHeight:CGFloat = 50
+    //标题偏移
+    let YQTitlePositionAdjustment:UIOffset = UIOffsetZero
+    //badge(小数字)圆圈北京颜色
+    let YQBadgeBackgroundColor = UIColor.redColor()
+    //tabBarItem图片偏移量
+    let YQImagePositionAdjustment:UIOffset = UIOffsetZero
+    //badge(小数字)颜色
+    let YQBadgeTextColor:UIColor = UIColor.whiteColor()
+    //badge字体
+    let YQBadgeTextFont:UIFont! = UIFont.systemFontOfSize(12)
+    //badge偏移量
+    let YQBadgePositionAdjustment:UIOffset! = UIOffsetZero
+    
+    //tabBarItem正常状态下的背景颜色 没有就设置nil
+    let YQUnselectedBackgroundColor:UIColor? = UIColor.groupTableViewBackgroundColor()
+    //tabBarItem选中状态下的背景图片 没有就设置nil
+    let YQSelectedBackgroundColor:UIColor? = UIColor.orangeColor()
+
+    //tabBar隐藏出现时动画的时间
+    let YQTabBarAnimationDuration:NSTimeInterval = 0.2
     
