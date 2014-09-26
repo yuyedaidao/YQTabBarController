@@ -8,25 +8,40 @@
 
 import UIKit
 
-typealias DidSelectedViewControllerClosure = (index:Int,viewController:UIViewController)
+var _yqTabBarController:AnyObject? = nil
+
+typealias DidSelectedViewControllerClosure = (index:Int,viewController:UIViewController)->Void
+
+class YQContainerView:UIView {
+    override func layoutSubviews() {
+        for item in self.subviews as [UIView]{
+            item.frame = self.bounds
+        }
+    }
+}
 
 class YQTabBarController: UIViewController {
 
-    var currentIndexOfViewController:Int = 0
+    class var shareInstance:YQTabBarController{
+        return _yqTabBarController as YQTabBarController
+    }
     
-    var containerView:UIView = UIView()
+    var currentIndexOfViewController:Int = -1
+
+    var containerView:UIView = YQContainerView()
     var viewControllers:[UIViewController]!
     var titles:[String]?
     var imageNames:[String]!
     var tabBar:YQTabBar!
     var didSelectedViewControllerClosure:DidSelectedViewControllerClosure?
-    
+
     
     var currentViewController:UIViewController?
     
     init(viewControllers:[UIViewController],titles:[String]?,imageNames:[String]!) {
        
         super.init()
+        _yqTabBarController = self
         
         self.viewControllers = viewControllers
         self.titles = titles
@@ -38,7 +53,7 @@ class YQTabBarController: UIViewController {
         tabBar = YQTabBar(frame:CGRectMake(0, self.view.bounds.size.height-YQTabBarHeight, self.view.bounds.size.width, YQTabBarHeight))
         //闭包回掉
         tabBar.tabBarItemClickedClosure = self.changeViewControllerAtIndex
-            
+        tabBar.showTabBarClosure = self.showTabBar
         self.view.addSubview(self.tabBar)
         
         //
@@ -61,12 +76,11 @@ class YQTabBarController: UIViewController {
             var unselectedImage:UIImage = UIImage(named: "\(self.imageNames[index])_a")
             
             var tabBarItem:YQTabBarItem = YQTabBarItem(frame: rect, title: self.titles?[index], selectedImage: selectedImage, unselectedImage: unselectedImage,index:index,tabBar:self.tabBar)
-            tabBarItem.badgeValue = 8+index
             self.tabBar.addTabBarItem(tabBarItem)
         }
         
         //显示第一个视图
-        self.changeViewControllerAtIndex(currentIndexOfViewController)
+        self.changeViewControllerAtIndex(0,trigger:false)
         
     }
 
@@ -84,38 +98,75 @@ class YQTabBarController: UIViewController {
     }
     
     
-    func changeViewControllerAtIndex(index:Int){
-        var toViewController:UIViewController = self.viewControllers[index]
-        
-        if let fromViewControoler = self.currentViewController{
+    private func showTabBar(show:Bool,animated:Bool){
+        if show{
             
-            fromViewControoler.willMoveToParentViewController(nil)
-            self.addChildViewController(toViewController)
-            self.containerView.addSubview(toViewController.view)
-            toViewController.view.frame = self.containerView.bounds
-            fromViewControoler.didMoveToParentViewController(nil)
-            toViewController.didMoveToParentViewController(self)
+            var toFrame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.height-YQTabBarHeight)
+            if animated{
+                UIView.animateWithDuration(YQTabBarAnimationDuration, animations: { () -> Void in
+                    self.tabBar.frame = CGRectMake(0, self.view.bounds.height-YQTabBarHeight, self.view.bounds.size.width, YQTabBarHeight)
+                    }, completion: { (finished) -> Void in
+                        self.containerView.frame = toFrame
+                        self.tabBar.tabBarShow = show
+                })
+            }else{
+                self.tabBar.frame = CGRectMake(0, self.view.bounds.height-YQTabBarHeight, self.view.bounds.size.width, YQTabBarHeight)
+                self.containerView.frame = toFrame
+                self.tabBar.tabBarShow = show
+            }
             
         }else{
-            //第一次
-            self.tabBar.tabBarItems.first?.selected = true
-            self.addChildViewController(toViewController)
-            self.containerView.addSubview(toViewController.view)
-            toViewController.view.frame = self.containerView.bounds
-            toViewController.didMoveToParentViewController(self)
+            
+            self.containerView.frame = self.view.bounds
+            if animated{
+                UIView.animateWithDuration(YQTabBarAnimationDuration, animations: { () -> Void in
+                    self.tabBar.frame = CGRectMake(0, self.view.bounds.height, self.view.bounds.size.width, YQTabBarHeight)
+                    },completion:{(finished) -> Void in
+                        self.tabBar.tabBarShow = show
+                })
+            }else{
+                self.tabBar.frame = CGRectMake(0, self.view.bounds.height, self.view.bounds.size.width, YQTabBarHeight)
+                self.tabBar.tabBarShow = show
+            }
+            
         }
-        self.currentIndexOfViewController = index
-        self.currentViewController = toViewController
     }
     
-    //
     
-    func tabBarItemClicked(tabBarItem:YQTabBarItem){
-        if(currentIndexOfViewController != tabBarItem.index){
-            //更换视图
+    //inside method
+    func changeViewControllerAtIndex(index:Int,trigger:Bool){
+        if self.currentIndexOfViewController != index {
+            var toViewController:UIViewController = self.viewControllers[index]
+            
+            if let fromViewControoler = self.currentViewController{
+                
+                fromViewControoler.willMoveToParentViewController(nil)
+                self.addChildViewController(toViewController)
+                self.containerView.addSubview(toViewController.view)
+                toViewController.view.frame = self.containerView.bounds
+                fromViewControoler.view.removeFromSuperview()//不从主视图删除就不用调用相应视图控制器生命周期中视图消失的函数
+                fromViewControoler.removeFromParentViewController()
+                toViewController.didMoveToParentViewController(self)
+                
+            }else{
+                //第一次
+                self.tabBar.tabBarItems.first?.selected = true
+                self.addChildViewController(toViewController)
+                self.containerView.addSubview(toViewController.view)
+                toViewController.view.frame = self.containerView.bounds
+                toViewController.didMoveToParentViewController(self)
+            }
+            self.currentIndexOfViewController = index
+            self.currentViewController = toViewController
         }
-        //执行代理方法
+        if(trigger){
+            if let closure = self.didSelectedViewControllerClosure{
+                closure(index: index,viewController:self.currentViewController!)
+            }
+        }
+        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

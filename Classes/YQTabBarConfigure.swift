@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 //tabbar背景颜色
 let YQTabBarBackgroundColor = UIColor.grayColor()
 let YQTabBarHeight:CGFloat = 50
@@ -21,3 +20,10 @@ let YQImagePositionAdjustment:UIOffset = UIOffsetZero
 let YQBadgeTextColor:UIColor = UIColor.whiteColor()
 let YQBadgeTextFont:UIFont! = UIFont.systemFontOfSize(12)
 let YQBadgePositionAdjustment:UIOffset! = UIOffsetZero
+
+let YQUnselectedBackgroundImage:UIImage? = nil
+let YQSelectedBackgroundImage:UIImage? = nil
+let YQUnselectedBackgroundColor:UIColor? = UIColor.groupTableViewBackgroundColor()
+let YQSelectedBackgroundColor:UIColor? = UIColor.orangeColor()
+
+let YQTabBarAnimationDuration:NSTimeInterval = 0.2

@@ -19,6 +19,8 @@
 		213FCF5E19D16D9400EEEB01 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213FCF5C19D16D9400EEEB01 /* FirstViewController.swift */; };
 		213FCF5F19D16D9400EEEB01 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213FCF5D19D16D9400EEEB01 /* FirstViewController.xib */; };
 		2151DF5219D45749009B475C /* YQTabBarConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151DF5119D45749009B475C /* YQTabBarConfigure.swift */; };
+		215A2CE019D54D81004A2943 /* YQUIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A2CDF19D54D81004A2943 /* YQUIViewControllerExtension.swift */; };
+		215A2CE219D55E1A004A2943 /* YQNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A2CE119D55E1A004A2943 /* YQNavigationController.swift */; };
 		21C33AED19D270DA0044270E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C33AEB19D270DA0044270E /* SecondViewController.swift */; };
 		21C33AEE19D270DA0044270E /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C33AEC19D270DA0044270E /* SecondViewController.xib */; };
 		21C33AF319D271C20044270E /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C33AF119D271C20044270E /* FourthViewController.swift */; };
@@ -66,6 +68,8 @@
 		213FCF5C19D16D9400EEEB01 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		213FCF5D19D16D9400EEEB01 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		2151DF5119D45749009B475C /* YQTabBarConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQTabBarConfigure.swift; sourceTree = "<group>"; };
+		215A2CDF19D54D81004A2943 /* YQUIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQUIViewControllerExtension.swift; sourceTree = "<group>"; };
+		215A2CE119D55E1A004A2943 /* YQNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQNavigationController.swift; sourceTree = "<group>"; };
 		21796C2A19D2C1BB00D1FBA4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		21C33AEB19D270DA0044270E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		21C33AEC19D270DA0044270E /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				213FCF5619D1630200EEEB01 /* YQTabBarController.swift */,
+				215A2CE119D55E1A004A2943 /* YQNavigationController.swift */,
+				215A2CDF19D54D81004A2943 /* YQUIViewControllerExtension.swift */,
 				213FCF5819D1649A00EEEB01 /* YQTabBar.swift */,
 				213FCF5A19D164CD00EEEB01 /* YQTabBarItem.swift */,
 				2151DF5119D45749009B475C /* YQTabBarConfigure.swift */,
@@ -314,10 +320,12 @@
 				21C33AF719D271EC0044270E /* ThirdViewController.swift in Sources */,
 				213FCF5719D1630200EEEB01 /* YQTabBarController.swift in Sources */,
 				213FCF3819D162AD00EEEB01 /* ViewController.swift in Sources */,
+				215A2CE019D54D81004A2943 /* YQUIViewControllerExtension.swift in Sources */,
 				21C33AF319D271C20044270E /* FourthViewController.swift in Sources */,
 				213FCF5E19D16D9400EEEB01 /* FirstViewController.swift in Sources */,
 				2151DF5219D45749009B475C /* YQTabBarConfigure.swift in Sources */,
 				21C33AED19D270DA0044270E /* SecondViewController.swift in Sources */,
+				215A2CE219D55E1A004A2943 /* YQNavigationController.swift in Sources */,
 				213FCF3619D162AD00EEEB01 /* AppDelegate.swift in Sources */,
 				213FCF5919D1649A00EEEB01 /* YQTabBar.swift in Sources */,
 			);

@@ -15,14 +15,33 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orn-2G-i2f">
-                    <rect key="frame" x="277" y="285" width="46" height="30"/>
-                    <state key="normal" title="Button">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orn-2G-i2f">
+                    <rect key="frame" x="258" y="285" width="85" height="30"/>
+                    <state key="normal" title="showOrHide">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="showOrHideTabBar:" destination="-1" eventType="touchUpInside" id="MZg-rW-0gl"/>
+                    </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="orn-2G-i2f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="220" id="UUf-d7-cLV"/>
+                <constraint firstAttribute="centerX" secondItem="orn-2G-i2f" secondAttribute="centerX" id="Zl7-ap-mv4"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="UUf-d7-cLV"/>
+                    <exclude reference="Zl7-ap-mv4"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="UUf-d7-cLV"/>
+                    <include reference="Zl7-ap-mv4"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

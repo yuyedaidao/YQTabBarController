@@ -8,13 +8,18 @@
 
 import UIKit
 
-typealias TabBarItemClickedClosure = (index:Int)->Void
+typealias TabBarItemClickedClosure = (index:Int,trigger:Bool)->Void
+typealias ShowTabBarClosure = (show:Bool,animated:Bool)->Void
 
 class YQTabBar: UIView {
     
     var tabBarItemClickedClosure:TabBarItemClickedClosure?
-    
+    var showTabBarClosure:ShowTabBarClosure!
     var tabBarItems:[YQTabBarItem] = [YQTabBarItem]()
+    var tabBarShow:Bool = true
+    var isShow:Bool{
+        return tabBarShow
+    }
     
     override init() {
         super.init()
@@ -49,9 +54,13 @@ class YQTabBar: UIView {
             }
         }
         if (self.tabBarItemClickedClosure != nil){
-            self.tabBarItemClickedClosure!(index: tabBarItem.index)
+            self.tabBarItemClickedClosure!(index:tabBarItem.index,trigger:true)
         }
 
+    }
+    
+    func showTabBar(show:Bool,animated:Bool){
+        self.showTabBarClosure(show: show, animated: animated)
     }
     
     /*

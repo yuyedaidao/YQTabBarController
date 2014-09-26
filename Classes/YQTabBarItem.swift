@@ -23,10 +23,10 @@ class YQTabBarItem: UIControl {
     var selectedTitleAttributes:Dictionary<NSString,AnyObject>!
     
     
-    var unselectedBackgroundImage:UIImage?
-    var selectedBackgroundImage:UIImage?
-    var unselectedBackgroundColor:UIColor?
-    var selectedBackgroundColor:UIColor?
+//    var unselectedBackgroundImage:UIImage? = YQUnselectedBackgroundImage
+//    var selectedBackgroundImage:UIImage? = YQSelectedBackgroundImage
+    var unselectedBackgroundColor:UIColor? = YQUnselectedBackgroundColor
+    var selectedBackgroundColor:UIColor? = YQSelectedBackgroundColor
     var unselectedImage:UIImage!
     var selectedImage:UIImage!
     var imagePositionAdjustment:UIOffset! = YQImagePositionAdjustment
@@ -83,14 +83,14 @@ class YQTabBarItem: UIControl {
             }
             image = self.selectedImage
             backgroundColor = self.selectedBackgroundColor
-            backgroundImage = self.selectedBackgroundImage
+//            backgroundImage = self.selectedBackgroundImage
         }else{
             if (self.title != nil) {
                 titleAttributes = self.unselectedTitleAttributes
             }
             image = self.unselectedImage
             backgroundColor = self.unselectedBackgroundColor
-            backgroundImage = self.unselectedBackgroundImage
+//            backgroundImage = self.unselectedBackgroundImage
         }
         
         
@@ -100,6 +100,13 @@ class YQTabBarItem: UIControl {
         var context:CGContextRef = UIGraphicsGetCurrentContext()
         CGContextSaveGState(context)
         
+        //画背景
+        if backgroundColor != nil{
+            CGContextSetFillColorWithColor(context, backgroundColor?.CGColor)
+            CGContextFillRect(context, self.bounds)
+        }
+        
+        //画标题和图片
         if let title:NSString = self.title{
             
             var titleSize:CGSize = title.boundingRectWithSize(CGSize(width: size.width,height: 40), options:NSStringDrawingOptions.UsesLineFragmentOrigin , attributes:titleAttributes, context: nil).size
@@ -110,9 +117,7 @@ class YQTabBarItem: UIControl {
             CGContextSetFillColorWithColor(context, (titleAttributes?[NSForegroundColorAttributeName] as UIColor).CGColor)
             title.drawInRect(CGRectMake(round((size.width-titleSize.width)/2)+titlePositionAdjustment.horizontal, imageStartingY+imageSize.height+titlePositionAdjustment.vertical, titleSize.width, titleSize.height), withAttributes: titleAttributes)
             
-//            if let shadow:NSShadow = (titleAttributes?[NSShadowAttributeName] as? NSShadow){
-//                CGContextSetShadowWithColor(context, shadow.shadowOffset, 1.0, shadow.shadowColor?.CGColor)
-//            }
+
             
         }else{
             var rect:CGRect = CGRectMake(round((size.width-imageSize.width)/2)+imagePositionAdjustment.horizontal,round((size.height-imageSize.height)/2)+imagePositionAdjustment.vertical, imageSize.width, imageSize.height)

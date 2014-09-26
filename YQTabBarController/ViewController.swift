@@ -19,11 +19,14 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
-        var vcs:[UIViewController] = [FirstViewController(nibName:"FirstViewController", bundle: nil),SecondViewController(nibName: "SecondViewController", bundle: nil),ThirdViewController(nibName: "ThirdViewController", bundle: nil),FourthViewController(nibName: "FourthViewController", bundle: nil)]
+        var vcs:[UIViewController] = [FirstViewController(nibName:"FirstViewController", bundle: nil),YQNavigationController(rootViewController: SecondViewController(nibName: "SecondViewController", bundle: nil)),ThirdViewController(nibName: "ThirdViewController", bundle: nil),FourthViewController(nibName: "FourthViewController", bundle: nil)]
         var imageNames:[String] = ["1","2","3","1"]
         var titles:[String] = ["发现","新闻","梦想","我的"]
         rootController = YQTabBarController(viewControllers:vcs, titles: titles, imageNames:imageNames)
         rootController?.view.backgroundColor = UIColor.redColor()
+        rootController?.didSelectedViewControllerClosure = { index,viewController in
+            NSLog("did clicked at index %d", index)
+        }
         self.presentViewController(rootController!, animated: true, completion: nil)
 
     }

@@ -12,10 +12,33 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.hidesYQTabBarWhenPushed(true)
         // Do any additional setup after loading the view.
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "详情", style: UIBarButtonItemStyle.Bordered, target: self, action: "push")
     }
 
+    func push(){
+        var vc:FourthViewController = FourthViewController(nibName: "FourthViewController", bundle: nil)
+        self.yqNavigationController?.pushViewController(vc, animated: true)
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        NSLog("%d -- %d", 2,1)
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        NSLog("%d -- %d", 2,2)
+    }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSLog("%d -- %d", 2,3)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        NSLog("%d -- %d", 2,4)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

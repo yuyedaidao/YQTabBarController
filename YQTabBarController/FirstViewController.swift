@@ -10,11 +10,33 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBAction func showOrHideTabBar(sender: AnyObject) {
+        self.yqTabBar.showTabBar(!self.yqTabBar.isShow, animated: true)
+    }
     @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.yqTabBarItem.badgeValue = 3
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        NSLog("%d -- %d", 1,1)
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        NSLog("%d -- %d", 1,2)
+    }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSLog("%d -- %d", 1,3)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        NSLog("%d -- %d", 1,4)
     }
 
     override func didReceiveMemoryWarning() {
