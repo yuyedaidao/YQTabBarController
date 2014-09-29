@@ -9,7 +9,7 @@ s.authors      =  {'yuyedaidao' => 'wyqpadding@gmail.com'}
 # Source Info
   s.platform     =  :ios
   s.source       =  {:git => 'https://github.com/yuyedaidao/YQTabBarController.git', :tag => '1.0'}
-  s.source_files = 'Classes/*.{h,m}'
+  s.source_files = 'Classes/*.swift'
 
 
   s.requires_arc = true
